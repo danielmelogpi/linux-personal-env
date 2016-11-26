@@ -19,3 +19,10 @@ ln -s ~/development/projects/linux-personal-env/scripts/.profile $HOME/.profile
 echo "Redefinindo configs do ambiente com base em novo .profile"
 source $HOME/.profile
 
+
+
+echo "configurando chaves ssh"
+$(ssh-agent)
+KEYSHOME="$dev/keys"
+
+
