@@ -19,12 +19,13 @@ fi
 # set PATH so it includes user's private bin directories
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
-#incluir JAVA no PATH
-PATH="$HOME/development/libs/java-jdk-8-oracle/bin:$PATH"
-
-#incluir android SDK no PATH
-PATH="$HOME/development/libs/android-sdk/bin:$PATH"
-
 
 dev="$HOME/development"
 echo "Raiz para desenvolvimento em $dev"
+
+#incluir JAVA no PATH
+PATH="$dev/libs/java-jdk-8-oracle/bin:$PATH"
+
+#incluir android SDK no PATH
+PATH="$dev/libs/android-sdk/bin:$PATH"
+
